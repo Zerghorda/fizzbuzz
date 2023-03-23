@@ -18,28 +18,14 @@ function fizzbuzzErtek(x) {
   let ertek = "";
   if (index % 3 === 0) {
     ertek = "fizz";
-  } else {
-    ertek = index + ", ";
+  } else if (index % 5 === 0) {
+    ertek = index + "buzz";
+  }
+  else if (index % 5 === 0 && index %3 ===0) {
+    ertek = index + "fizzbuzz";
   }
   return ertek;
 }
-function fizzbuzzErtek(x) {
-  let ertek = "";
-  if (index % 5 === 0) {
-    ertek = "buzz";
-  } else {
-    ertek = index + ", ";
-  }
-  return ertek;
-}
-function fizzbuzzErtek(x) {
-  let ertek = "";
-  if (index === 15) {
-    ertek = "fizz buzz";
-  } else {
-    ertek = index + ", ";
-  }
-  return ertek;
-}
+
 
 
